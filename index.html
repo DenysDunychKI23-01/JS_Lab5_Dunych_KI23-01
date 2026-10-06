@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5 — Класи в JavaScript</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 40px auto; padding: 20px; background-color: #f4f6f9; color: #333; }
+        h1, h2 { color: #2c3e50; text-align: center; }
+        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 15px; }
+        button { background-color: #6f42c1; color: white; border: none; padding: 12px; border-radius: 5px; cursor: pointer; font-size: 14px; transition: background-color 0.2s; }
+        button:hover { background-color: #5a32a3; }
+        .out-box { margin-top: 15px; padding: 15px; background: #e9ecef; border-radius: 5px; font-weight: bold; font-size: 15px; text-align: center; min-height: 24px; white-space: pre-line; }
+        .info { background: #e8f4f8; padding: 15px; border-left: 5px solid #17a2b8; border-radius: 4px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Лабораторна робота №5 (ЛР №7)</h1>
+    <h2>Тема: Класи в JavaScript</h2>
+    <p style="text-align: center;"><b>Виконав:</b> Дунич Денис, група КІ-23-01</p>
+
+    <div class="section">
+        <h3>Рівень 4–6 балів</h3>
+        <div class="btn-grid">
+            <button onclick="task4_1()">1. Клас Student & Доступ</button>
+            <button onclick="task4_2()">2. Клас Book (Геттери/Сеттери)</button>
+            <button onclick="task4_3()">3. Клас Car (Успадкування)</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Рівень 7–9 балів</h3>
+        <div class="btn-grid">
+            <button onclick="task7_1()">1. Інтерфейс Фігур (Shape & Circle)</button>
+            <button onclick="task7_2()">2. Банківський рахунок (#balance)</button>
+            <button onclick="task7_3()">3. Статичні методи (MathHelper)</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Рівень 10–12 балів</h3>
+        <div class="btn-grid">
+            <button onclick="task10_1()">1. Ролі користувачів (User & Admin)</button>
+            <button onclick="task10_2()">2. Система "Корзина покупок"</button>
+            <button onclick="task10_3()">3. Система керування завданнями</button>
+        </div>
+    </div>
+
+    <div id="out" class="out-box">Результат дій з виклику класів з'явиться тут</div>
+
+    <div class="info">
+        💡 <b>Примітка:</b> Результати роботи об'єктів та приватних полів також детально виводяться у розробницьку консоль браузера (<b>F12</b>).
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
